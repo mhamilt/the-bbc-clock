@@ -12,8 +12,8 @@ class BBCClock
     hourHeight = endHourWidth * 4;
     hourWidthDifference = abs(endHourWidth - startHourWidth);
     hourWidthInc = (float)hourWidthDifference/12.;
-    tickCenterOuterDiameter = clockDiameter/5;
-    tickCenterInnerDiameter = 2*tickCenterOuterDiameter/3;
+    tickCenterOuterDiameter = 2*clockDiameter/7;
+    tickCenterInnerDiameter = 3*tickCenterOuterDiameter/4;
     //----------------------------------------------------------------------------  
     hourHandLength = clockRadius + hourHeight/5;
     minuteHandLength = clockRadius + (int)(hourHeight * 1.1);
@@ -52,7 +52,7 @@ class BBCClock
     popMatrix();
 
     pushMatrix();
-    rotate(m*PI/30);    
+    rotate(m*PI/30 + s*(PI/1800));    
     rect(-minuteHandWidth/2, 0, minuteHandWidth, -minuteHandLength);
     popMatrix();
 
