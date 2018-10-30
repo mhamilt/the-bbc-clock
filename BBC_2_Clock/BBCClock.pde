@@ -7,7 +7,7 @@ class BBCClock
     //----------------------------------------------------------------------------
     clockDiameter = screenHeight/2;
     clockRadius = clockDiameter/2;
-    startHourWidth = clockDiameter/33;
+    startHourWidth = clockDiameter/66;
     endHourWidth = clockDiameter/16;
     hourHeight = endHourWidth * 4;
     hourWidthDifference = abs(endHourWidth - startHourWidth);
