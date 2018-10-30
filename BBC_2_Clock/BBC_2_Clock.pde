@@ -1,5 +1,4 @@
 BBCClock bbcClock;
-color backgroundColour = color(20,20,100);
 
 void setup()
 {
