@@ -4,12 +4,16 @@ class BBCClock
   // Constructor
   BBCClock(int screenWidth, int screenHeight)
   {
+    x = 0;
+    y = 0;
+    width = screenWidth;
+    height = screenHeight;
     //----------------------------------------------------------------------------
     clockDiameter = screenHeight/2;
     clockRadius = clockDiameter/2;
     startHourWidth = clockDiameter/66;
     endHourWidth = clockDiameter/16;
-    hourHeight = endHourWidth * 4;
+    hourHeight = endHourWidth * 3;
     hourWidthDifference = abs(endHourWidth - startHourWidth);
     hourWidthInc = (float)hourWidthDifference/12.;
     tickCenterOuterDiameter = 2*clockDiameter/7;
@@ -145,6 +149,11 @@ class BBCClock
   color fillColour = color(100, 170, 250, 250);
   color backgroundColour = color(24, 0, 170);
   //==============================================================================
+  // coordinates
+  int x;
+  int y;
+  int width;
+  int height;
   PGraphics staticGraphics;
   //==============================================================================
 }
