@@ -14,12 +14,19 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/the-bbc-clock/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/processing-tone-matrix/manifest.json">
 
     <title>Time</title>
 
     <link rel="stylesheet" href="/assets/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="/ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+if ('serviceWorker' in navigator)
+{
+  navigator.serviceWorker.register('service-worker.js'); // register service worker
+}
+    </script>
   </head>
 
   <body>
