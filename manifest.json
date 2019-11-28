@@ -1,36 +1,36 @@
 {
-  "short_name": "ToneMatrix",
-  "name": "ToneMatrix",
+  "short_name": "Time",
+  "name": "Time",
   "icons": [
     {
-      "src": "/processing-tone-matrix/images/icon_72x72.png",
+      "src": "/the-bbc-clock/images/icon_72x72.png",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "/processing-tone-matrix/images/icon_152x152.png",
+      "src": "/the-bbc-clock/images/icon_152x152.png",
       "type": "image/png",
       "sizes": "152x152"
     },
     {
-      "src": "/processing-tone-matrix/images/icon_192x192.png",
+      "src": "/the-bbc-clock/images/icon_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/processing-tone-matrix/images/icon_256x256.png",
+      "src": "/the-bbc-clock/images/icon_256x256.png",
       "type": "image/png",
       "sizes": "256x256"
     },
     {
-      "src": "/processing-tone-matrix/images/icon_512x512.png",
+      "src": "/the-bbc-clock/images/icon_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "background_color": "#3367D6",
-  "start_url": "./fullscreen.html",
-  "scope": "/processing-tone-matrix",
+  "start_url": "./",
+  "scope": "/the-bbc-clock",
   "orientation": "portrait",
   "display": "fullscreen",
   "theme_color": "#3367D6"
