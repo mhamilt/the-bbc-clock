@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/the-bbc-clock/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/the-bbc-clock/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/the-bbc-clock/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/the-bbc-clock/favicons/safari-pinned-tab.svg" color="#222ea1">
+    <link rel="shortcut icon" href="/the-bbc-clock/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/the-bbc-clock/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Time</title>
+
+    <link rel="stylesheet" href="/assets/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="/ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">Time</h1>
+          </header>
+
+          <div class="post-content">
+            <style>
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#contenu {
+  position: relative;
+  z-index: 2;
+}
+            </style>
+
+
+
+            <script language="javascript" type="text/javascript" src="/js/BBCClock.js"></script>
+
+            <script>
+var u2 = function(p)
+{
+  var bbcClock;
+  p.setup = function()
+  {
+    p.createCanvas(p.windowWidth, p.windowHeight);
+    bbcClock = new BBCClock(p, p.width, p.height);
+  };
+
+  p.draw = function()
+  {
+    bbcClock.display(p);
+  };
+  p.windowResized = function()
+  {
+    p.resizeCanvas(p.windowWidth, p.windowHeight);
+    bbcClock = new BBCClock(p, p.width, p.height);
+  }
+};
+var myp5 = new p5(u2, 'sketch5');
+            </script>
+
+            <!-- <script language="javascript" type="text/javascript" src="/js/sketch.js"></script> -->
+            <div class="sketch" id="sketch5"> </div>
+
+          </div>
+
+        </article>
+
+      </div>
+    </main>
+  </body>
+
+</html>
