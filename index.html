@@ -22,9 +22,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
+// Check that service workers are supported
 if ('serviceWorker' in navigator)
 {
-  navigator.serviceWorker.register('service-worker.js'); // register service worker
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () =>
+  {
+    navigator.serviceWorker.register('service-worker.js');
+  });
 }
     </script>
   </head>
