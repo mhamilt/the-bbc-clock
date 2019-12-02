@@ -19,6 +19,7 @@ const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
+  '/the-bbc-clock/manifest.json'
   '/the-bbc-clock/index.html',
   '/the-bbc-clock/css/style.css',
   '/the-bbc-clock/js/BBCClock.js',
