@@ -19,10 +19,12 @@ const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
-  'index.html',
-  './', // Alias for index.html
-  'css/style.css',
-  'demo.js'
+  '/the-bbc-clock/index.html',
+  '/the-bbc-clock/css/style.css',
+  '/the-bbc-clock/js/BBCClock.js',
+  '/the-bbc-clock/js/sketch.js',
+  'https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js',
+  'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
